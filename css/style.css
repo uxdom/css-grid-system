@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Permanent Marker", cursive;
+  text-align: center;
+  color: white;
+}
+
+main {
+  display: grid;
+  grid-row-gap: 10px;
+  grid-column-gap: 10px;
+  grid-template-columns: auto auto auto auto;
+  background-color: pink;
+  padding: 10px;
+  min-height: 100vh;
+  grid-template-areas:
+    "header header header header"
+    "article article article aside"
+    "section section section aside"
+    "footer footer footer aside";
+}
+header {
+  grid-area: header;
+  background-color: hsla(328, 100%, 44%, 0.7);
+}
+
+article {
+  grid-area: article;
+  background-color: hsla(328, 100%, 44%, 0.6);
+}
+section {
+  grid-area: section;
+  background-color: hsla(328, 100%, 44%, 0.5);
+}
+
+aside {
+  grid-area: aside;
+  background-color: hsla(328, 100%, 44%, 0.4);
+}
+
+footer {
+  grid-area: footer;
+  background-color: hsla(328, 100%, 44%, 0.3);
+}
